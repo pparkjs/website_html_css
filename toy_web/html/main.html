@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" href="../css/홈페이지틀.css">
+<style>
+
+</style>
+</head>
+<body>
+<div id="total">
+<!-- 상단 배너 만들기 -->
+<header>
+	<h1>
+		<img src="../images/쇼핑백.jpg" alt="쇼핑백.jpg">
+		<a href="main.html">Web Shop</a>
+	</h1>
+</header>
+
+<nav>
+	<ul>
+		<li><a href ="#">Home</a></li>
+		<li><a href ="#">About us</a></li>
+		<li><a href ="#">News</a></li>
+		<li><a href ="#">My account</a></li>
+		<li><a href ="#">Contacts</a></li>
+	</ul>
+</nav>
+<div id="container">
+	<aside id="left">
+	<h1>카테고리</h1>
+		<ul>
+			<li><a href="computer.html" target="ifr">컴퓨터</a></li>
+			<li><a href="clothing.html">의류</a></li>
+			<li><a href="음악.html">음악</a></li>
+			<li><a href="영화.html">영화</a></li>
+			<li><a href="스포츠_레저.html">스포츠/레져</a></li>
+			<li><a href="가구_인테리어.html" target="ifr">가구/인테리어</a></li>
+			<li><a href="식품.html">식품</a></li>
+		</ul>
+	</aside>
+	<section id="main">
+		<iframe src="computer.html" title="컴퓨터" name="ifr"></iframe>
+	</section>
+	<aside id="right">
+<!-- 쇼핑카트의 div -->
+		<div class="r1">
+			<h1>Shopping Cart</h1>
+			<p>현재 쇼핑카트에 물품이 없습니다.</p>
+			<a class="r" href="#">쇼핑카트 보기</a>
+		</div>
+<!-- 로그인 form -->
+		<form class="r2" action="" method="post">
+			<h2>Log in</h2>
+		<!-- login 입력 div -->
+			<div class="login">
+				<p>아이디</p>
+				<input class="id" type="text" name="id" placeholder="아이디">
+				<p>비밀번호</p>
+				<input class="pw" type="password" name="pw" placeholder="비밀번호">
+			</div>
+			
+			<div class="bt">
+				<input class="submit" type="submit" size="20" value="로그인">
+				<input class="reset" type="reset" value="초기화">
+			</div>
+		</form>
+<!-- 회원가입 pw분실 div -->
+		<div class="r3">
+			<a class="join" href="#">회원가입</a>
+			<a class="find" href="#">비밀번호 분실</a>
+		</div>	
+	</aside>
+</div>
+<footer>footer</footer>
+</div>
+</body>
+</html>
