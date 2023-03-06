@@ -3,8 +3,65 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
+<link rel="stylesheet" href="../css/상품틀.css">
+<style>
+ img{
+ 	margin-bottom: 20px;
+ }
+ .container{
+ 	margin-top : 73px;
+ 	margin-left : 10px;
+ }
+ .main{
+ 	display: flex;
+ 	justify-content: center;
+	width: 1283px;
+	margin-top: 120px;
+ }
+ 
+ .container{
+	display: flex;
+/* 	border: 1px solid red; */
+	justify-content: center;
+	width: 400px;
+	margin-top: 0px;
+	height: 315px;
+}
+
+.p2{
+	border : 2px solid #dcdcdc;
+	flex:1;
+	width: 0px;
+	padding:15px 10px;
+	
+}
+ button{
+ 	margin-bottom: 10px;
+ 	width: 300px;
+ }
+ 
+ 
+</style>
 </head>
 <body>
-
+<div class="main">
+	<div class="header">
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/mKvQ_Rhf8Kc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen name="mifr"></iframe>
+	</div>	
+	
+	<div class="container">
+			<div class="p2">
+				<a href="https://www.youtube.com/embed/mKvQ_Rhf8Kc?autoplay=1&mute=1" target="mifr">
+				<img src="../images/영화1.jpg" alt="영화1.jpg">
+				</a>
+			</div>
+	
+			<div class="p2">
+				<a href="https://www.youtube.com/embed/5RSTKGskxDM?autoplay=1&mute=1" target="mifr">
+				<img src="../images/영화2.jpg" alt="영화2.jpg">
+				</a>
+			</div>
+	</div>
+</div>
 </body>
 </html>
