@@ -11,16 +11,36 @@ table{
 	border-collapse: collapse;
 }
 th{
-	height : 40px;
+	height : 60px;
 }
 td{
 	text-align: center;
 	width : 180px;
-   	height : 50px;
+   	height : 40px;
 }
 .qty{
 	width : 120px;
 } 
+.box{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.box input{
+ 	margin-right : 5px; 
+	width:70px;
+}
+.q{
+	width: 93%; 
+	height : 93%;
+	text-align: center;
+}
+.s{
+	width: 93%;
+	height : 93%;
+	text-align: center;
+}
 </style>
 </head>
 <body>
@@ -38,33 +58,39 @@ td{
 		<tr>
 			<td>컴퓨터 세트</td>
 			<td>2,000,000원</td>
-			<td class="qty"></td>
-			<td></td>
+			<td class="qty"><input class="q" type="text" name="comQty" value="0"></td>
+			<td><input class="s" type="text" name="comSum" value="0"></td>
 		</tr>
 		
 		<tr>
 			<td>티셔츠</td>
 			<td>50,000원</td>
-			<td class="qty"></td>
-			<td></td>
+			<td class="qty"><input class="q" type="text" name="tQty" value="0"></td>
+			<td><input class="s" type="text" name="comSum" value="0"></td>
 		</tr>
 		
 		<tr>
 			<td>음악파일</td>
 			<td>1,000원</td>
-			<td class="qty"></td>
-			<td></td>
+			<td class="qty"><input class="q" type="text" name="musicQty" value="0"></td>
+			<td><input class="s" type="text" name="comSum" value="0"></td>
 		</tr>
 		
 		<tr>
 			<td>영화파일</td>
 			<td>5,000원</td>
-			<td class="qty"></td>
-			<td></td>
+			<td class="qty"><input class="q" type="text" name="movieQty" value="0"></td>
+			<td><input class="s" type="text" name="comSum" value="0"></td>
 		</tr>
 		
 	
 	</table>
+	<br><br>
+	<div class="box">
+		<input type="button" value="계산">
+		<input type="button" value="구매">
+		<input type="reset" value="초기화">
+	</div>
 </form>
 </body>
 </html>
